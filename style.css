@@ -1,0 +1,182 @@
+@import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Marcellus';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  /* we should check this one out later! */
+  /* font-size: 2vw; */
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  color: #4A4A4A;
+}
+
+header, section {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Marcellus', serif;
+  color: #3B6A73;
+}
+
+h2 {
+  color: #9AAD2B;
+  font-family: 'Marcellus', serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.logo {
+  height: 6.5rem;
+  background-image: url(images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+
+  padding: .5rem;
+}
+
+.logo h1 {
+  margin-left: 4rem;
+  font-size: 3rem;
+}
+
+.logo h2 {
+  margin-left: 9rem;
+  margin-top: .3rem;
+  font-size: 1.6rem;
+}
+
+header {
+  padding: 1.5rem;
+}
+
+header .button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.button {
+  color: #9AAD2B;
+  background-color: #3B6A73;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: .75rem 1.8rem;
+  border-radius: 1.5rem;
+}
+
+.splash {
+  margin-bottom: 3rem;
+
+  background-image: url(images/splash.jpg);
+  height: 50vw;
+  max-height: 400px;
+  width: 100%;
+  background-size: cover;
+}
+
+section {
+  padding: 0 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #979797;
+  font-size: 1.5rem;
+}
+
+.subsection {
+  margin: 0 2rem 2rem 2rem;
+  display: flex;
+  text-align: left;
+}
+
+.subsection > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.subsection .content {
+  flex: 1;
+}
+
+.subsection img {
+  width: 7rem;
+  height: 7rem;
+}
+
+footer {
+  background-color: #3B6A73;
+  color: white;
+  padding-top: 1rem;
+  font-size: .7rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer section {
+  margin-bottom: 1rem;
+}
+
+footer section div:not(:last-child) {
+  margin-bottom: .3rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer i.fa {
+  font-size: 2rem;
+}
+
+footer a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.angies-list {
+  background-image: url('images/angiesList.svg');
+  background-size: cover;
+  display: inline-block;
+  height: 2rem;
+  width: 2.2rem;
+  background-repeat: no-repeat;
+}
+
+ul {
+  color: #3B6A73;
+}
+
+ul li:before {
+  content: '✔';
+  margin-right: .7rem;
+}
+
+ul li {
+  margin-bottom: .7rem;
+}
