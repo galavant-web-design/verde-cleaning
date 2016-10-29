@@ -34,12 +34,14 @@ h2 {
 }
 
 h3 {
-  text-transform: uppercase;
-  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  margin-bottom: .8rem;
+  font-weight: bold;
+  color: #3B6A73;
 }
 
 p {
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .logo {
@@ -65,22 +67,23 @@ p {
 
 header {
   padding: 1.5rem;
-}
-
-header .button {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button {
-  color: #9AAD2B;
-  background-color: #3B6A73;
+  color: #3B6A73;
+  border: .15rem solid #9AAD2B;
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
   padding: .75rem 1.8rem;
   border-radius: 1.5rem;
+}
+
+.button:hover {
+  border-color: #3B6A73;
 }
 
 .splash {
@@ -96,20 +99,20 @@ header .button {
 section {
   padding: 0 2rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 section h2 {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-bottom: .5rem;
   border-bottom: 1px solid #979797;
   font-size: 1.5rem;
 }
 
 .subsection {
-  margin: 0 2rem 2rem 2rem;
+  margin: 0 3rem 3rem 3rem;
   display: flex;
   text-align: left;
 }
@@ -122,7 +125,18 @@ section h2 {
   flex: 1;
 }
 
-.subsection img {
+.content img {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.content p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.subsection img.icon {
   width: 7rem;
   height: 7rem;
 }
@@ -173,6 +187,11 @@ ul {
 }
 
 ul li:before {
+  content: '•';
+  margin-right: .7rem;
+}
+
+ul.check li:before {
   content: '✔';
   margin-right: .7rem;
 }
