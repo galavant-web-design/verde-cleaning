@@ -16,6 +16,10 @@ html {
   color: #4A4A4A;
 }
 
+body {
+  background-color: white;
+}
+
 header, section {
   position: relative;
   max-width: 900px;
@@ -29,7 +33,7 @@ h1 {
 }
 
 h2 {
-  color: #9AAD2B;
+  color: #A34B37; /*color: #9AAD2B;leaf green*/
   font-family: 'Marcellus', serif;
 }
 
@@ -37,15 +41,16 @@ h3 {
   font-size: 1.2rem;
   margin-bottom: .8rem;
   font-weight: bold;
-  color: #3B6A73;
+  color: #9AAD2B;
 }
 
 p {
   line-height: 1.4;
+  color: #221715;
 }
 
 .logo {
-  height: 6.5rem;
+  height: 8rem;
   background-image: url(images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -56,13 +61,14 @@ p {
 
 .logo h1 {
   margin-left: 4rem;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .logo h2 {
-  margin-left: 9rem;
+  color: #9AAD2B;
+  margin-left: 10rem;
   margin-top: .3rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 header {
@@ -99,11 +105,11 @@ header {
 
 .carousel .image {
   position: absolute;
-  left: 100vw;
+  transform: translateX(100vw);
   top: 0;
   width: 100vw;
   height: 100%;
-  transition: left 1s linear 0s;
+  transition: transform 1s linear 0s;
   opacity: 0;
 
   background-size: cover;
@@ -111,12 +117,12 @@ header {
 }
 
 .carousel .image.old {
-  left: -100vw;
+  transform: translateX(-100vw);
   opacity: 1;
 }
 
 .carousel .image.current {
-  left: 0;
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -139,7 +145,9 @@ section {
 }
 
 section h2 {
+  color: #3B6A73;
   text-transform: uppercase;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 3rem;
   padding-bottom: .5rem;
@@ -175,6 +183,11 @@ section h2 {
 .subsection img.icon {
   width: 7rem;
   height: 7rem;
+}
+
+.subsection img.badgeicon {
+  width: 14rem;
+  height: 14rem;
 }
 
 footer {
@@ -219,7 +232,8 @@ footer a:not(:last-child) {
 }
 
 ul {
-  color: #3B6A73;
+  color: #221715;
+  /*color: #3B6A73;*/
 }
 
 ul li:before {
