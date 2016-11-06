@@ -86,14 +86,50 @@ header {
   border-color: #3B6A73;
 }
 
-.splash {
+.carousel {
   margin-bottom: 3rem;
-
-  background-image: url(images/splash.jpg);
   height: 50vw;
-  max-height: 400px;
+  max-height: 35rem;
   width: 100%;
+
+  position: relative;
+
+  overflow: hidden
+}
+
+.carousel .image {
+  position: absolute;
+  left: 100vw;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  transition: left 1s linear 0s;
+  opacity: 0;
+
   background-size: cover;
+  background-position: center;
+}
+
+.carousel .image.old {
+  left: -100vw;
+  opacity: 1;
+}
+
+.carousel .image.current {
+  left: 0;
+  opacity: 1;
+}
+
+.carousel .image.bathroom {
+  background-image: url(images/bathroom.jpg);
+}
+
+.carousel .image.bedroom {
+  background-image: url(images/bedroom.jpg);
+}
+
+.carousel .image.kitchen {
+  background-image: url(images/kitchen.jpg);
 }
 
 section {
