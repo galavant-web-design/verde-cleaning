@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Marcellus';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Marcellus';
 
 html {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ html {
   /* we should check this one out later! */
   /* font-size: 2vw; */
   font-size: 16px;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', serif;
   color: #4A4A4A;
 }
 
@@ -203,7 +203,7 @@ footer {
 }
 
 footer section {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 footer section div:not(:last-child) {
