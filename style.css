@@ -18,13 +18,11 @@ html {
 
 body {
   background-color: #F7F7F7;
-  padding-top: 11rem;
 }
 
 header, section {
   position: relative;
   margin: 0 auto;
-  background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 
@@ -52,34 +50,29 @@ p {
 }
 
 .logo {
-  height: 8rem;
+  height: 3rem;
   background-image: url(images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
 
-  padding: .5rem;
-}
+  font-family: 'Marcellus', serif;
+  color: #3B6A73;
+  font-size: 2rem;
 
-.logo h1 {
-  margin-left: 4rem;
-  font-size: 4rem;
-}
-
-.logo h2 {
-  color: #9AAD2B;
-  margin-left: 10rem;
-  margin-top: .3rem;
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 header {
-  padding: 1.5rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(255, 255, 255, .85);
 
-  height: 11rem;
+  height: 4rem;
   position: absolute;
   top: 0;
   width: 100%;
@@ -91,8 +84,8 @@ header {
   border: .15rem solid #9AAD2B;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.2rem;
-  padding: .75rem 1.8rem;
+  font-size: 1rem;
+  padding: .7rem 1.6rem;
   border-radius: 1.5rem;
 }
 
@@ -155,7 +148,6 @@ section {
   border-radius: .2rem;
 
   text-align: center;
-
   background-color: white;
 }
 
