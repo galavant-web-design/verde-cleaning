@@ -9,8 +9,6 @@ html {
 }
 
 html {
-  /* we should check this one out later! */
-  /* font-size: 2vw; */
   font-size: 16px;
   font-family: 'Open Sans', serif;
   color: #4A4A4A;
@@ -72,8 +70,8 @@ header {
   align-items: center;
   background-color: rgba(255, 255, 255, .85);
 
+  position: fixed;
   height: 4rem;
-  position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -194,7 +192,6 @@ section h2 {
 }
 
 .subsection img.badgeicon {
-  width: 14rem;
   height: 14rem;
 }
 
@@ -256,4 +253,22 @@ ul.check li:before {
 
 ul li {
   margin-bottom: .7rem;
+}
+
+@media screen and (max-device-width: 660px) {
+  html {
+    font-size: 26px;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  .subsection {
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .subsection img.badgeicon {
+    display: none;
+  }
 }
