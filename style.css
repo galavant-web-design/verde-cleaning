@@ -261,7 +261,8 @@ ul li {
   }
 
   section {
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
+    margin-bottom: 1rem;
   }
 
   .subsection {
