@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  color: #A34B37; /*color: #9AAD2B;leaf green*/
+  color: #A34B37;
   font-family: 'Marcellus', serif;
 }
 
@@ -40,6 +40,10 @@ h3 {
   margin-bottom: .8rem;
   font-weight: bold;
   color: #9AAD2B;
+}
+
+a {
+  color: #A34B37;
 }
 
 p {
@@ -149,16 +153,21 @@ section {
   background-color: white;
 }
 
-
 section h2 {
-  color: #3B6A73;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   margin-bottom: 3rem;
-  padding-bottom: .5rem;
-  border-bottom: 1px solid #979797;
   font-size: 1.5rem;
+
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-top: -1.5rem;
+  background-color: #3B6A73;
+  color: white;
+  padding: 1rem;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
 }
 
 .subsection {
@@ -193,6 +202,25 @@ section h2 {
 
 .subsection img.badgeicon {
   height: 14rem;
+}
+
+.map {
+  background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=40.035612,-105.098557&zoom=10&size=400x400&key=AIzaSyDZX7Qk75ghpycY725BiZwkk-icoQpba_w);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.map ul {
+  background-color: rgba(59, 106, 115, .8);
+  color: white;
+  border-radius: .2rem;
+  padding: 1rem;
+  height: 100%;
 }
 
 footer {
