@@ -271,4 +271,20 @@ ul li {
   .subsection img.badgeicon {
     display: none;
   }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  footer .bottom {
+    align-self: auto;
+  }
+
+  footer > div:not(:last-child) {
+    margin-top: 1rem;
+  }
 }
