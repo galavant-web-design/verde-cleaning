@@ -18,7 +18,7 @@ body {
   background-color: #F7F7F7;
 }
 
-header, section {
+header, section, blockquote {
   position: relative;
   margin: 0 auto;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
@@ -49,6 +49,10 @@ a {
 p {
   line-height: 1.4;
   color: #221715;
+}
+
+.hidden {
+  display: none;
 }
 
 .logo {
@@ -142,7 +146,7 @@ header {
   background-image: url(images/kitchen.jpg);
 }
 
-section {
+section, blockquote {
   padding: 1.5rem 1.5rem;
   margin-bottom: 3rem;
   max-width: 700px;
@@ -170,6 +174,27 @@ section h2 {
   border-top-right-radius: .2rem;
 }
 
+blockquote {
+  padding: 2rem 2rem 1rem 2rem;
+  border-left: .25rem solid #3B6A73;
+  text-align: left;
+}
+
+blockquote .attribution {
+  margin-top: 1rem;
+  text-align: right;
+  color: #3B6A73;
+
+  font-size: 1.2rem;
+}
+
+.attribution .title {
+  margin-top: .3rem;
+  color: #777777;
+  font-size: .9rem;
+  font-style: italic;
+}
+
 .subsection {
   margin: 0 3rem 3rem 3rem;
   display: flex;
@@ -182,6 +207,10 @@ section h2 {
 
 .subsection .content {
   flex: 1;
+}
+
+.subsection:first-child {
+  margin-top: 3rem;
 }
 
 .content img {
@@ -220,6 +249,7 @@ section h2 {
   color: white;
   border-radius: .2rem;
   padding: 1rem;
+  padding-left: calc(1rem + 20px);
   height: 100%;
 }
 
@@ -266,30 +296,35 @@ footer .bottom {
 
 ul {
   color: #221715;
-  /*color: #3B6A73;*/
+  margin-left: 25px;
 }
 
-ul li:before {
-  content: '•';
-  margin-right: .7rem;
+ul.check {
+  margin-left: 25px;
 }
 
-ul.check li:before {
-  content: '✔';
-  margin-right: .7rem;
+ul.check li {
+  list-style-type: none;
+  list-style-image: url('data:image/svg+xml;utf8,<svg height="12px" width="12px" id="Layer_1" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M21.652,3.211c-0.293-0.295-0.77-0.295-1.061,0L9.41,14.34  c-0.293,0.297-0.771,0.297-1.062,0L3.449,9.351C3.304,9.203,3.114,9.13,2.923,9.129C2.73,9.128,2.534,9.201,2.387,9.351  l-2.165,1.946C0.078,11.445,0,11.63,0,11.823c0,0.194,0.078,0.397,0.223,0.544l4.94,5.184c0.292,0.296,0.771,0.776,1.062,1.07  l2.124,2.141c0.292,0.293,0.769,0.293,1.062,0l14.366-14.34c0.293-0.294,0.293-0.777,0-1.071L21.652,3.211z" fill-rule="evenodd"/></svg>');
 }
 
 ul li {
+  list-style-type: disc;
+  list-style-position: outside;
   margin-bottom: .7rem;
 }
 
-@media screen and (max-device-width: 660px) {
+@media (max-width: 660px) {
   html {
-    font-size: 26px;
+    font-size: 12px;
   }
 
-  section {
-    max-width: calc(100% - 2rem);
+  header {
+    padding: 0 1rem;
+  }
+
+  section, blockquote {
+    max-width: calc(100vw - 2rem);
     margin-bottom: 1rem;
   }
 
@@ -315,5 +350,11 @@ ul li {
 
   footer > div:not(:last-child) {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 10px;
   }
 }
