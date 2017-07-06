@@ -314,6 +314,11 @@ ul li {
   margin-bottom: .7rem;
 }
 
+.better-business-bureau {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 660px) {
   html {
     font-size: 12px;
@@ -325,6 +330,10 @@ ul li {
 
   section, blockquote {
     max-width: calc(100vw - 2rem);
+    margin-bottom: 1rem;
+  }
+
+  .better-business-bureau {
     margin-bottom: 1rem;
   }
 
