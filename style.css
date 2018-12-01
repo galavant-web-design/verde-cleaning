@@ -314,11 +314,6 @@ ul li {
   margin-bottom: .7rem;
 }
 
-.better-business-bureau {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
 @media (max-width: 660px) {
   html {
     font-size: 12px;
